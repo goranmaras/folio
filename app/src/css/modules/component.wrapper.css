@@ -1,0 +1,25 @@
+.wrapper {
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 0 24px;
+
+    @media (--screen-from-sml) {
+    padding: 0 44px;
+  }
+
+  @media (--screen-from-sml) {
+    padding: 0 44px;
+  }
+
+  @media (--screen-from-med) {
+    padding: 0 56px;
+  }
+
+  @media (--screen-from-lrg) {
+    padding: 0 72px;
+  }
+
+  @media (--screen-from-xlrg) {
+    padding: 0 80px;
+  }
+}

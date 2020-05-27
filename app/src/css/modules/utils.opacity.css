@@ -1,0 +1,18 @@
+.u-opacity {
+
+    &__80 {
+        opacity: .8;
+    }
+
+    &__60 {
+        opacity: .6;
+    }
+
+    &__40 {
+        opacity: .4;
+    }
+
+    &__20 {
+        opacity: .2;
+    }
+}

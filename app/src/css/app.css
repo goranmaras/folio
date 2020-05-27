@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;700");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital@0;1&display=swap");
+
+@import "modules/vars.colors.css";
+@import "modules/vars.responsive.css";
+@import "modules/vars.typography.css";
+
+@import "modules/global.css";
+@import "modules/normalize.css";
+
+
+@import "modules/component.wrapper.css";
+@import "modules/component.header.css";
+@import "modules/section.portfolio.css";
+@import "modules/section.contact.css";
+@import "modules/section.footer.css";
+
+@import "modules/nav.css";
+
+@import "modules/utils.opacity.css";

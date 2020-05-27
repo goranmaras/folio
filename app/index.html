@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Goran Maras Portfolio</title>
+    <link rel="stylesheet" href="dist/css/app.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="dist/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="dist/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="dist/favicon/favicon-16x16.png">
+    <link rel="manifest" href="dist/favicon/site.webmanifest">
+    <link rel="mask-icon" href="dist/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#141414">
+    <meta name="theme-color" content="#ffffff">
+
+    <meta name="copyright" content="Goran Maras, 2020"/>
+    <meta name="description" content="A full-stack Java developer based in Croatia. I have worked on various Java, Spring Boot and Android projects some of which are listed below."/>
+    <meta name="keywords" content="android developer, java developer, fullstack developer, developer, android, java, kotlin, mobile apps, app, millionaire, junior developer, senior developer, retrofit, androidx, HTML, CSS, JavaScript"/> 
+    <meta name="robots" content="index,follow"/> 
+    <meta name="author" content="Milan Balac, Goran Maras"/>
+</head>
+
+<body>
+    <div class="main">
+
+        <div class="nav">
+            <div class="wrapper">
+                <div class="nav__bar">
+                    <img src="src/img/gm_logo.svg" class="nav__logo" />
+                    <ul class="nav__menu nav__menu--is-hidden">
+                        <li class="nav__menu__item"><a class="nav__link" href="#about-section"><span>01</span>About</a></li>
+                        <li class="nav__menu__item"><a class="nav__link" href="#portfolio-section"><span>02</span>Portfolio</a></li>
+                        <li class="nav__menu__item"><a class="nav__link" href="#contact-section"><span>03</span>Contact</a></li>
+                    </ul>
+                    <button class="nav__hamburger">
+                        <span class="hamburger-line-a"></span>
+                        <span class="hamburger-line-b"></span>
+                        <span class="hamburger-line-c"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <header class="header" id="about-section">
+            <div class="wrapper">
+                <div class="header__container">
+                    <div class="header__name">
+                        <h1><span>I'm</span> Goran</h1>
+                        <ul class="header__name__links">
+                            <li><a href="https://github.com/goranmaras">github</a></li>
+                            <li><a href="https://www.linkedin.com/in/goran-maras-38625510b/">linkedin</a></li>
+                        </ul>
+                    </div>
+                    <div class="header__desc">
+                            <div class="header__desc__visual"></div>
+                            <p class="header__desc__text">A full-stack Java developer based in Croatia. I have worked on various Java, Spring Boot and Android projects some of
+                            which are listed below.</p>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section class="portfolio" id="portfolio-section">
+            <div class="wrapper">
+                <div class="portfolio__container">
+                    <div class="portfolio__title">
+                        <h1>Projects</h1>
+                    </div>
+
+                    <div class="portfolio__collection">
+                        <div class="portfolio__collection__item">
+                            <a href="https://github.com/goranmaras/SelfJournalApp" class="portfolio__collection__item__image"></a>
+                            <div class="portfolio__collection__item__desc">
+                                <div class="portfolio__collection__item__desc__header">
+                                    <h1>Self Journal</h1>
+                                    <span class="u-opacity__60">android app</span>
+                                </div>
+                                <p>Write down your thoughts with a description and picture. Authorization, database and images are stored on the firebase
+                                cloud.</p>
+                            </div>
+                        </div>
+                        <div class="portfolio__collection__item">
+                            <a href="https://github.com/goranmaras/ToDo-Planer-App" class="portfolio__collection__item__image portfolio__collection__item__image--todo"></a>
+                            <div class="portfolio__collection__item__desc">
+                                <div class="portfolio__collection__item__desc__header">
+                                    <h1>To-Do App</h1>
+                                    <span class="u-opacity__60">spring-boot/react app</span>
+                                </div>
+                                <p>A Full-Stack application that allows you to create orders, add projects and assign specific tasks to each project. The
+                                app is deployed on Heroku.</p>
+                            </div>
+                        </div>
+                        <div class="portfolio__collection__item">
+                            <a href="https://github.com/goranmaras/EdunovaProjektMenadzer" class="portfolio__collection__item__image portfolio__collection__item__image--taskm"></a>
+                            <div class="portfolio__collection__item__desc">
+                                <div class="portfolio__collection__item__desc__header">
+                                    <h1>Task Manager</h1>
+                                    <span class="u-opacity__60">java app</span>
+                                </div>
+                                <p>Final project for Edunova Java developer certificate. The program is using excelent MVC arhitecture and OOP principles.
+                                Made with NetBeans and MariaDB.</p>
+                            </div>
+                        </div>
+                        <div class="portfolio__collection__item">
+                            <a href="https://github.com/goranmaras/MoranChatApp" class="portfolio__collection__item__image portfolio__collection__item__image--moran"></a>
+                                <div class="portfolio__collection__item__desc">
+                                    <div class="portfolio__collection__item__desc__header">
+                                        <h1>Chat app</h1>
+                                        <span class="u-opacity__60">android app</span>
+                                    </div>
+                                    <p>A chat application based on FirebaseCloud that allows its users to create an account, add friends, and chat with them.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact" id="contact-section">
+            <div class="wrapper">
+                <h1 class="contact__title">Contact</h1>
+            </div> 
+            <div class="contact__container">
+                <div class="wrapper">
+                    <div class="contact__container__inner">
+                        <div class="contact__container__visual"></div>
+                        <div class="contact__container__desc">
+                            <p>Don’t be a stranger. Ask away and let’s kick things off!</p>
+                            <div class="contact__buttons">
+                                <a class="contact__buttons--primary" href="mailto:goran.maras77@gmail.com">Send Email</a>
+                                <a class="contact__buttons--secondary" href="https://drive.google.com/open?id=11vxYrPRXLQxhqpDukH_qGbXRKvtWOhNn">Get CV</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="wrapper">
+                <div class="footer__container">
+                    <div class="footer__container__name"><span>&copy; Goran Maras, 2020</span></div>
+                    <div class="footer__container__links">
+                        <ul>
+                            <li><a href="https://github.com/goranmaras">github</a></li>
+                            <li><a href="https://www.linkedin.com/in/goran-maras-38625510b/">linkedin</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <script>
+        $(document).ready(function () {
+                $(".nav__hamburger, .nav__menu__item").click(function () {
+                    $(".nav__menu").toggleClass("nav__menu--is-hidden");
+                    $(".hamburger-line-a").toggleClass("hamburger-animate-a");
+                    $(".hamburger-line-b").toggleClass("hamburger-animate-b");
+                    $(".hamburger-line-c").toggleClass("hamburger-animate-c");
+                    $("html, body").toggleClass("scroll-lock");
+                });
+            });
+    </script>
+    <script>
+        $(document).ready(function () {
+                $(".nav__link").on("click", function (event) {
+                    if (this.hash !== "") {
+                        event.preventDefault();
+
+                        var target = this.hash;
+
+                        $("html, body")
+                            .stop()
+                            .animate(
+                                {
+                                    scrollTop: $(target).offset().top + 20
+                                },
+                                800,
+                                function () {
+                                    if (history.pushState) {
+                                        window.history.pushState(null, null, target);
+                                    } else {
+                                        window.location.hash = target;
+                                    }
+                                }
+                            );
+                    }
+                });
+            });
+    </script>
+</body>
+
+</html>

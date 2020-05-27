@@ -1,0 +1,223 @@
+.nav {
+    z-index: 11;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 16px 0px;
+    background: $mainLight;
+    opacity: .97;
+
+    @media (---screen-from-med) {
+        padding: 24px 0px;
+        width: auto;
+    }
+
+    @media (---screen-from-lrg) {
+        padding: 36px 0px;
+        width: auto;
+    }
+
+    &__bar {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__logo {
+        padding-top: 8px;
+        height: 32px;
+        width: auto;
+
+        @media (--screen-from-med) {
+            padding-top: 10px;
+        }
+
+        @media (--screen-from-lrg) {
+            padding-top: 12px;
+            height: 40px;
+        }
+    }
+
+    &__hamburger {
+        position: relative;
+        margin-top: 4px;
+        height: 28px;
+        width: 32px;
+        font-size: 100%;
+        font-family: inherit;
+        border: 0;
+        background: none;
+
+        & span {
+            display: block;
+            position: absolute;
+            content: "";
+            height: 4px;
+            width: 32px;
+            left: 0;
+            background: $mainDark;
+            transition: all .33s ease;
+        }
+
+        & span:first-child {
+            top: 4px;
+            transform-origin: 0% 0%;
+        }
+
+        & span:nth-child(2){
+            top: 12px;
+        }
+
+        & span:last-child {
+            bottom: 4px;
+            transform-origin: 0% 100%;
+        }
+
+        @media (--screen-from-med) {
+            display: none;
+        }
+    }
+
+    &__menu {
+        @media (--screen-to-med){
+            position: fixed;
+            left: 0;
+            top: 72px;
+            padding: 12px 20px;
+            width: 100%;
+            height: 100%;
+            background: $mainDark;
+        }
+
+        &--is-hidden {
+            @media (--screen-to-med) {
+                display: none;
+                visibility: hidden;
+            }
+        }
+
+        &--is-visible {
+            @media (--screen-to-med) {
+                display: block;
+                visibility: visible;
+            }
+        }
+
+     
+
+        &__item {
+            position: relative;
+            display: inline-block;
+
+            @media (--screen-from-med) {
+                &:nth-child(n) {
+                    padding-right: 80px;
+                }
+
+                &:last-child {
+                    padding-right: 0;
+                }
+
+                &:after {
+                    content: "";
+                    position: absolute;
+                    background: $mainAccent;
+                    left: 0;
+                    bottom: 0;
+                    width: 0;
+                    height: 2px;
+                    transition: all 0.5s ease-in-out;
+                }
+
+                &:hover {
+
+                    .nav__link{
+                        color: $mainAccent;
+                    }
+
+                    &:after {
+                        width: 100%;
+                    }
+
+                }
+
+            }
+            
+            @media (--screen-to-med) {
+                 display: block;
+                 
+                 & span, a{
+                     color: $mainLight;
+                 }
+
+                 &:before, &:after{
+                    content:"";
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    height: 1px;
+                    width: 120%;
+                    background: $mainLight;
+                    opacity: .1;
+                 }
+
+                &:after{
+                    left: 120%;
+                    opacity: 1;
+                    transition: all .33s ease-in-out;
+                 }
+
+                &:hover {
+                    &:after {
+                        left: 0;
+                    }
+                }
+            }
+
+            & span {
+                display: block;
+                margin-bottom: 6px;
+                font-size: $type-micro;
+                font-weight: $type-weight-regular;
+
+                @media (--screen-from-med) {
+                    margin-bottom: 12px;
+                }
+            }
+
+            & .nav__link {
+                display: block;
+                padding: 12px 0px;
+                font-size: &type-base;
+                letter-spacing: 6px;
+                font-weight: $type-weight-bold;
+                text-transform: uppercase;
+                transition: all 0.3s ease-in-out;
+
+                @media (--screen-from-med) {
+                    font-size: $type-small;
+                }
+            }
+
+        }
+
+    }
+
+}
+
+.scroll-lock {
+  @media (--screen-to-med) {
+    overflow: hidden;
+  }
+}
+
+.hamburger-animate-a {
+    transform: rotate(45deg) translate(2px, -6px);
+}
+
+.hamburger-animate-b {
+    opacity: 0;
+}
+
+.hamburger-animate-c {
+    transform: rotate(-45deg) translate(2px, 6px);
+}

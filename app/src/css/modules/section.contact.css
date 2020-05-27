@@ -1,0 +1,216 @@
+.contact {
+    padding-top: 60px;
+    position: relative;
+    background: $mainDark;
+    overflow: hidden;
+
+    &__title {
+        margin: 0;
+        font-size: calc(50px + (94-50)*(100vw-320px)/(543-320));
+        letter-spacing: calc((calc(50px + (212-50)*(100vw-320px)/(1440-320)))*.16);
+        text-transform: uppercase;
+        color: $mainLight;
+    }
+
+    &__container {
+        position: relative;
+        overflow: hidden;
+        z-index: 5;
+        margin-top: -6%;
+        padding: 60px 0;
+        width: 100%;
+        background: $mainLight;
+        box-shadow: 0px 0px 32px #000000;
+
+        &__inner {
+            display: flex;
+        }
+
+        &__visual {
+            lost-column: 2/12 flex;
+            position: relative;
+
+            &:after{
+                content: "";
+                top: 0;
+                right: -5%;
+                position: absolute;
+                width: 300%;
+                height: 150%;
+                background: repeating-linear-gradient(45deg, $mainDark, $mainDark 25px, $mainLight 25px, $mainLight 50px);
+            }
+        }
+
+        &__desc {
+            lost-column: 10/12 flex;
+
+            & p {
+                font-size: 20px;
+                font-family: $ff-sans;
+                line-height: 28px;
+            }
+        }
+
+
+    }
+
+    &__buttons {
+        display: flex;
+        lost-flex-container: column;
+        margin-top: 60px;
+
+        & * {
+            margin-bottom: 6px;
+            border: none;
+            background: none;
+            padding: 16px 16px;
+            font-family:$ff-sans;
+            font-size: $type-tiny;
+            text-transform: uppercase;
+            letter-spacing: calc(12px * 0.4);
+            font-weight: $type-weight-bold;
+            text-align: left;
+            transition: all .6s ease;
+        }
+
+        &--primary {
+            background: $mainDark;
+            color: $mainLight;
+            border: 1px solid $mainDark;
+
+            &:hover {
+                background: $mainLight;
+                color: $mainDark;
+            }
+        }
+
+        &--secondary {
+            background: $mainLight;
+            border: 1px solid $mainDark;
+
+            &:hover {
+                background: $mainDark;
+                color: $mainLight;
+            }
+        }
+    }
+}
+
+@media (--screen-from-sml) {
+    .contact{
+
+        &__title {
+            font-size: calc(88px + (128-88)*(100vw-544px)/(767-544));
+        }
+
+        &__container{
+            box-shadow: 0px 0px 52px #000000;
+
+                &__desc {
+
+                & p {
+                    font-size: 28px;
+                    line-height: 36px;
+                }
+            }
+        }
+
+        &__buttons {
+            lost-flex-container: row;
+            justify-content: space-between;
+
+            & * {
+                display: inline;
+                width: calc(40% - 6px);
+                padding: 20px 16px;
+                font-size: $type-small;
+                letter-spacing: calc(14px * 0.3);
+            }
+        }
+    }
+}
+
+@media (--screen-from-med) {
+    .contact{
+
+        &__title {
+            font-size: calc(122px + (172-122)*(100vw-768px)/(1023-768));
+        }
+       
+        &__container{
+
+            &__visual {
+                lost-column: 4/12 flex;
+                position: relative;
+
+                &:after {
+                    right: 5%;
+                    width: 200%;
+                    height: 150%;
+                }
+            }
+
+            &__desc {
+            lost-column: 8/12 flex;
+            }
+        }
+    }
+}
+
+@media (--screen-from-lrg) {
+    .contact{
+
+        &__title {
+            font-size: calc(165px + (246-163)*(100vw-1024px)/(1440-1024));
+        }
+       
+        &__container{
+            padding: 120px 0; 
+
+            &__visual {
+            lost-column: 5/12 flex;
+            position: relative;
+
+            &:after{
+                right: -5%;
+                width: 200%;
+                height: 150%;
+            }
+        }
+
+        &__desc {
+            lost-column: 1/2 flex;
+        }
+
+
+        }
+
+        &__buttons {
+            margin-top: 112px;
+
+            & * {
+                padding: 28px 24px;
+            }
+        }
+    }
+}
+
+@media (--screen-from-xlrg) {
+    .contact{
+
+        &__title {
+            font-size: calc(194px + (236-194)*(100vw-1200px)/(1440-1200));
+            letter-spacing: calc(196px * 0.15);
+        }
+    }
+}
+
+@media (--screen-from-xxlrg) {
+    .contact{
+
+        &__title {
+            font-size: 236px;
+            letter-spacing: calc(236px * 0.12);
+        }
+    }
+}

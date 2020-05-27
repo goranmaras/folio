@@ -1,0 +1,54 @@
+/*------------------------------------*\
+    # base.globals
+\*------------------------------------*/
+
+/**
+ * Initialize typomatic in project (sets font-size and line-height
+ * on html selector.
+ */
+html {
+  height: 100%;
+  min-height: 100%;
+}
+
+body {
+  position: relative;
+  overflow-x: hidden;
+  font-family: $ff-sans;
+  font-weight: $type-weight-regular; 
+  -webkit-font-smoothing: antialiased;
+
+  /* Disable body scroll in some situations like opening up a modal or navi*/
+  &.is-locked {
+    overflow: hidden;
+    position: fixed;
+  }
+}
+
+*::selection {
+  background: #d8d8d8;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+svg {
+  max-width: 100%;
+}
+
+.main {
+  position: relative;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  /* font-weight: $type-weight-regular; */
+}

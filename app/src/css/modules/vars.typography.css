@@ -1,0 +1,17 @@
+$type-micro: 11px;
+$type-tiny: 12px;
+$type-small: 14px;
+$type-base: 16px;
+$type-medium: 20px;
+$type-large: 22px;
+$type-xlarge: 28px;
+$type-xxlarge: 39px;
+$type-xxxlarge: 49px;
+$type-huge: 61px;
+$type-gigantic: 95px;
+$type-weight-light: 300;
+$type-weight-regular: 400;
+$type-weight-bold: 700;
+
+$ff-sans: "Chakra Petch", "Arial", sans-serif;
+$ff-sans-alt: "IBM Plex Mono", "Courier New", "Arial", sans-serif;

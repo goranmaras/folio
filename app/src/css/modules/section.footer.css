@@ -1,0 +1,128 @@
+.footer{
+    padding: 44px 0;
+    position: relative;
+    z-index: 6;
+    background: $mainDark;
+    color: $mainLight;
+    
+    &__container{
+        display: flex;
+        lost-flex-container: column;
+        justify-content: space-between;
+        font-family: $ff-sans-alt;
+        font-size: 14px;
+
+        &__name{
+        }
+
+        &__links{
+            & ul { 
+                & li{
+                    position: relative;
+                    display: inline-block;
+                    text-align: right;
+
+                    & a {
+                        position: relative;
+                        color:$mainLight;
+
+                        &:after {
+                            content: "";
+                            position: absolute;
+                            height: 1.5px;
+                            width: 4px;
+                            background: $mainLight;
+                            top: 55%;
+                            transition: all 0.6s ease-in-out;
+                        }
+
+                        &:hover {
+                            text-shadow: 1px 1px 4px $mainAccent;
+                            &:after {
+                                width: calc(105%-52px);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 452px) {
+    .footer {
+        &__container {
+
+            &__name {
+                margin-bottom: 16px;
+            }
+
+            &__links {
+
+                & ul {
+                    & li {
+                        & a {
+                            padding-right: 60px;
+
+                            &:after {
+                                left: -8px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 453px) {
+    .footer {
+        &__container {
+            lost-flex-container: row;
+
+            &__links {
+
+                & ul {
+                    & li {
+                        & a {
+                            padding-left: 60px;
+
+                            &:after {
+                                left: 52px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (--screen-from-med) {
+    .footer {
+        &__container {
+            font-size: 16px;
+        }
+
+        &__links{
+            & ul {
+                & li {
+                    & a {
+                        padding-left: 124px;
+
+                        &:after {
+                            left: 112px;
+                        }
+
+                        &:hover {
+
+                            &:after {
+                                width: calc(105%-112px);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
