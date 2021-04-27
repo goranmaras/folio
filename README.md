@@ -1,6 +1,6 @@
 # PORTFOLIO #
 
-[goranmaras.com](https://goranmaras.000webhostapp.com/)
+[goranmaras.com](http://goranmaras.infinityfreeapp.com/)
 -------------------------------------------------------
 
 Portfolio files, initial commit on https://bitbucket.org/milanbalac/maras-portfolio/src/dev/
